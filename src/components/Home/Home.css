@@ -1,0 +1,54 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url("/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    gap: 7px;
+    position: relative;
+}
+
+.start-heading {
+    font-size: 44px;
+}
+
+.summary {
+    max-width: 550px;
+    text-align: center;
+}
+
+.start-btn {
+    font-size: 16px;
+    padding: 10px 22px;
+    background: #c40094;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.start-btn:hover {
+    background: #c40094ba;
+}
+
+.loader-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation{
+    width: 30%;
+}

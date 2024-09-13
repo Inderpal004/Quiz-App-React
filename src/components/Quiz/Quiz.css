@@ -1,0 +1,125 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.quiz-container {
+    width: 600px;
+    max-width: auto;
+    border: 1px solid #c40094;
+    border-radius: 5px;
+    padding: 30px 45px;
+}
+
+.heading {
+    background: linear-gradient(45deg,transparent,#c40094,transparent);
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.quiz-question {
+    margin: 18px 0px;
+}
+
+.options-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.options {
+    width: 100%;
+    border: 1px solid #c40094;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.options:hover {
+    background: #2e0524;
+}
+
+.quiz-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+
+.next-btn,.reset-btn {
+    background: #c40094;
+    border: none;
+    outline: none;
+    padding: 7px 25px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.next-btn:hover,.reset-btn:hover {
+    background: #c40094ba;
+}
+
+.correct {
+    background: #1acc85;
+    border-color: #00d397;
+}
+
+.correct:hover {
+    background: #1acc85;
+}
+
+.wrong {
+    background: #fb7171;
+    border-color: #ff4a4a;
+}
+
+.wrong:hover {
+    background: #fb7171;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.result-heading {
+    margin-top: 10px;
+}
+
+.progress-circular {
+    position: relative;
+    margin-top: 30px;
+    width: 210px;
+    height: 210px;
+    border-radius:50%;
+    background: conic-gradient(#c40094 0deg,#ededed 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.progress-circular::after {
+    position: absolute;
+    content: '';
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: #121212;
+    z-index: 10;
+}
+
+.value {
+    color: #fff;
+    z-index: 100;
+    font-size: 30px;
+    font-weight: 500;
+}
